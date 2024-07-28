@@ -2,23 +2,23 @@ import gradio as gr
 import sqlite3
 import pandas as pd
 
-# Create a sample database
-conn = sqlite3.connect(':memory:')
-cursor = conn.cursor()
-cursor.execute('''
-    CREATE TABLE employees (
-        id INTEGER PRIMARY KEY,
-        name TEXT,
-        department TEXT,
-        salary REAL
-    )
-''')
-cursor.executemany('INSERT INTO employees (name, department, salary) VALUES (?, ?, ?)',
-                   [('John Doe', 'IT', 75000),
-                    ('Jane Smith', 'HR', 65000),
-                    ('Mike Johnson', 'Sales', 80000),
-                    ('Emily Brown', 'Marketing', 70000)])
-conn.commit()
+# # Create a sample database
+# conn = sqlite3.connect(':memory:')
+# cursor = conn.cursor()
+# cursor.execute('''
+#     CREATE TABLE employees (
+#         id INTEGER PRIMARY KEY,
+#         name TEXT,
+#         department TEXT,
+#         salary REAL
+#     )
+# ''')
+# cursor.executemany('INSERT INTO employees (name, department, salary) VALUES (?, ?, ?)',
+#                    [('John Doe', 'IT', 75000),
+#                     ('Jane Smith', 'HR', 65000),
+#                     ('Mike Johnson', 'Sales', 80000),
+#                     ('Emily Brown', 'Marketing', 70000)])
+# conn.commit()
 
 def execute_sql(query):
     try:

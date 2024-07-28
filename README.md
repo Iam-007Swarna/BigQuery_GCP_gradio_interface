@@ -5,10 +5,15 @@ This repository contains two Gradio applications for executing SQL queries: one 
 ![UI Screenshot](public/UI.png)
 
 ## Setup Environment
-
+```python
 pip install virtualenv
+```
+```python
 virtualenv <your-env>
+```
+```python
 <your-env>\Scripts\activate
+```
 
 ## Requirements
 
@@ -19,8 +24,9 @@ virtualenv <your-env>
 - google-cloud-bigquery (for BigQuery interface)
 
 ### Install the required packages using:
-
-```pip install -r requirements.txt```
+```python
+pip install -r requirements.txt
+```
 
 ## SQLite Query Interface (gradio_sql.py)
 
@@ -33,12 +39,13 @@ This application allows you to execute SQL queries on a sample SQLite database.
 
 ### Usage:
 1. Run the script:
+   ```python
+   python gradio_sql.py
+   ```
    
-   ```python gradio_sql.py```
-   
-2. Open the provided URL in your web browser
-3. Enter your SQL query in the text box
-4. Click "Submit" to see the results
+3. Open the provided URL in your web browser
+4. Enter your SQL query in the text box
+5. Click "Submit" to see the results
 
 ## BigQuery SQL Interface (gradio_bigquery.py)
 
@@ -56,12 +63,13 @@ This application allows you to execute SQL queries on your BigQuery dataset.
 ### Usage:
 1. Ensure your Google Cloud credentials are set up correctly
 2. Run the script:
+   ```python
+   python gradio_bigquery.py
+   ```
    
-   ```python gradio_bigquery.py```
-   
-3. Open the provided URL in your web browser
-4. Enter your BigQuery SQL query in the text box
-5. Click "Submit" to see the results
+4. Open the provided URL in your web browser
+5. Enter your BigQuery SQL query in the text box
+6. Click "Submit" to see the results
 
 ## Note
 

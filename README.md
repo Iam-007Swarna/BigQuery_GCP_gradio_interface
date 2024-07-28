@@ -2,6 +2,8 @@
 
 This repository contains two Gradio applications for executing SQL queries: one for SQLite and another for BigQuery.
 
+![UI Screenshot](public/UI.png)
+
 ## SQLite Query Interface (gradio_sql.py)
 
 This application allows you to execute SQL queries on a sample SQLite database.
